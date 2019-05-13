@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .banner {
+        flex: 1 auto auto;
+        height: 90px
+    }
+    .middle-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex: 2 0 0;
+        width: 98vw;
+        ul {
+            list-style: none;            
+            padding: 0;
+            li {
+                padding: 4px
+            }
+            a {
+                color: white;
+                text-decoration: none;
+                &.active::after {
+                    content: '\25ba';
+                    position: relative;
+                    right: -70%;
+                }
+            }         
+        }
+        #left {
+            flex: 1 0 0;
+            padding: 10px;
+            background-color: rgb(152, 152, 152)   
+        }
+        #right {
+            flex: 5 0 0;
+            padding: 0 10px;
+        }
+    }
+    .footer {
+        width: 98vw;
+    }
+}
+
