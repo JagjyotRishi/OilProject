@@ -1,6 +1,7 @@
-CREATE TABLE persons(
-    person_id NUMBER,
-    first_name VARCHAR2(50) NOT NULL,
-    last_name VARCHAR2(50) NOT NULL,
-    PRIMARY KEY(person_id)
+CREATE TABLE Persons (
+    ID int NOT NULL,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int,
+    PRIMARY KEY (ID)
 );
