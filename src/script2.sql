@@ -4,4 +4,4 @@ CREATE TABLE Employees (
     FirstName varchar(255),
     Age int NOT NULL,
     PRIMARY KEY (ID)
-)
+);
